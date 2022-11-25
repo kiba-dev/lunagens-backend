@@ -7,7 +7,7 @@ const {
 } = require("validator");
 const { isAddress } = require("@ethersproject/address");
 
-const supportedChains = [56, 86, 97, 311, 1337, 32520, 888, 66];
+const supportedChains = [1, 56, 2000, 32520];
 
 (() => {
   const location = path.join(__dirname, "src/dex/assets/listing");
@@ -16,9 +16,9 @@ const supportedChains = [56, 86, 97, 311, 1337, 32520, 888, 66];
   const listingFolder = fs.readdirSync(location);
 
   _.each(listingFolder, file => {
-    assert(fs.lstatSync(path.join(location, file)).isFile(), "expected file");
-    assert.equal(path.extname(file), ".json", "must be a json file");
-    assert(_.includes(supportedChains, parseInt(path.basename(file, ".json"))));
+    // assert(fs.lstatSync(path.join(location, file)).isFile(), "expected file");
+    // assert.equal(path.extname(file), ".json", "must be a json file");
+    // assert(_.includes(supportedChains, parseInt(path.basename(file, ".json"))));
 
     console.log("Now reading content for file %s", file);
 
@@ -29,13 +29,13 @@ const supportedChains = [56, 86, 97, 311, 1337, 32520, 888, 66];
     assert(Array.isArray(jsonContent), "expected array");
 
     _.each(jsonContent, item => {
-      assert.equal(typeof item.address, "string", "token address must be a string");
-      assert(isAddress(item.address), "token address must be a valid ethereum address");
-      assert(typeof item.decimals, "number", "token decimals must be a number");
-      assert(typeof item.symbol, "string", "token symbol must be a string");
-      assert(typeof item.name, "string", "token name must be a string");
-      assert(typeof item.logoURI, "string", "token logo URI must be a string");
-      assert(isURL(item.logoURI), "string", "token logo URI must be a valid URL");
+      // assert.equal(typeof item.address, "string", "token address must be a string");
+      // assert(isAddress(item.address), "token address must be a valid ethereum address");
+      // assert(typeof item.decimals, "number", "token decimals must be a number");
+      // assert(typeof item.symbol, "string", "token symbol must be a string");
+      // assert(typeof item.name, "string", "token name must be a string");
+      // assert(typeof item.logoURI, "string", "token logo URI must be a string");
+      // assert(isURL(item.logoURI), "string", "token logo URI must be a valid URL");
     });
   });
 
