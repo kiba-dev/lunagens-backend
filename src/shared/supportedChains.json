@@ -12,30 +12,20 @@
       "rpcUrl": "https://bsc-dataseed4.defibit.io",
       "explorerUrl": "https://bscscan.com"
     },
-    "311": {
-      "name": "Omax Chain",
-      "rpcUrl": "https://mainapi.omaxray.com",
-      "explorerUrl": "https://omaxray.com"
-    },
     "32520": {
       "name": "Bitgert Mainnet",
       "rpcUrl": "https://chainrpc.com",
       "explorerUrl": "https://brisescan.com"
     },
-    "86": {
-      "name": "Gatechain",
-      "rpcUrl": "https://evm.gatenode.cc",
-      "explorerUrl": "https://gatescan.org"
+    "1": {
+      "name": "Ethereum Mainnet",
+      "rpcUrl": "https://1rpc.io/eth",
+      "explorerUrl": "https://etherscan.io"
     },
-    "888": {
-      "name": "Wanchain",
-      "rpcUrl": "https://gwan-ssl.wandevs.org:56891",
-      "explorerUrl": "https://wanscan.org"
-    },
-    "66": {
-      "name": "OKX Chain Mainnet",
-      "rpcUrl": "https://exchainrpc.okex.org",
-      "explorerUrl": "https://oklink.com/en/okc"
+    "2000": {
+      "name": "Dogechain Mainnet",
+      "rpcUrl": "https://rpc-sg.dogechain.dog",
+      "explorerUrl": "https://explorer.dogechain.dog"
     }
   }
 }
