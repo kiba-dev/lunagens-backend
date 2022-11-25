@@ -35,20 +35,20 @@ app.listen(port, () => {
     await initRedisConnection();
   })();
   // Sync DB and handle events
-  syncDEXDB();
-  handleDEXEvents();
+  // syncDEXDB();
+  // handleDEXEvents();
 
   // Sync DB and handle events
   syncStakingPoolDB();
   handleStakingPoolEvents();
 
   // Sync DB and handle events
-  syncMultiSigDB();
-  handleMultiSigActionsEvents();
+  // syncMultiSigDB();
+  // handleMultiSigActionsEvents();
 
   // Sync DB and handle events
-  syncLaunchPadDBs();
-  handleSaleCreatorsEvents();
+  // syncLaunchPadDBs();
+  // handleSaleCreatorsEvents();
 
   logger("Everything synced and app is running on port %d in %s", port, env);
 });
