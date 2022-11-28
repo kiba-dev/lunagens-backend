@@ -1,11 +1,11 @@
 import { createClient } from "redis";
 import { redisURI } from "../environment";
 
-const client = createClient();
-
-export const initConnection = () => client.connect({
+const client = createClient({
   url: redisURI
 });
+
+export const initConnection = () => client.connect();
 export const closeConnection = () => client.disconnect();
 export const cacheItem = (key: string, item: any, expiresIn = 0) => {
   return new Promise<string | null>((resolve, reject) => {
