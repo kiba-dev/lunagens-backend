@@ -1,5 +1,5 @@
 import { createClient } from "redis";
-import { redisURI } from "./shared/environment";
+import { redisURI } from "../environment";
 
 const client = createClient();
 
