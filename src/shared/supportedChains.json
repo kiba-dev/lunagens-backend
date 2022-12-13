@@ -9,7 +9,7 @@
   "mainnet": {
     "56": {
       "name": "Binance Smartchain",
-      "rpcUrl": "https://bsc-dataseed4.defibit.io",
+      "rpcUrl": "https://bscrpc.com",
       "explorerUrl": "https://bscscan.com"
     },
     "32520": {

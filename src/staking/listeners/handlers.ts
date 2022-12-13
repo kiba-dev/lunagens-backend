@@ -52,7 +52,7 @@ export const getPastLogsForActions = async (url: string, actions: string, chainI
     }
     const logs = await rpcCall(parseInt(chainId), {
       method: "eth_getLogs",
-      params: [{ fromBlock: hexValue(lastPropagatedBlockForActions + 1), toBlock: blockNumber, address: actions, topics: [] }]
+      params: [{ fromBlock: "0x168D7A9", toBlock: "0x168D7A9", address: actions, topics: [] }]
     });
 
     logger("----- Iterating logs for actions %s -----", actions);
